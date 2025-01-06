@@ -4,7 +4,7 @@ class AppThemeComponent {
   getAppTheme = () => {
     const appTheme: ThemeConfig = {
       token: {
-        colorPrimary: "#fda0ca",
+        colorPrimary: "#F955C8",
         colorLink: "#000",
         colorLinkActive: "#000",
         colorLinkHover: "#000",
@@ -16,13 +16,15 @@ class AppThemeComponent {
           primaryShadow: "transparen",
         },
         Modal: {
-          colorPrimary: "#397350",
+          colorPrimary: "#F955C8",
         },
         Layout: {
           bodyBg: "transparent",
         },
         Card: {
           colorBgContainer: "#fff",
+          actionsBg: "#fff",
+          colorBorder: "#fff",
           borderRadiusLG: 12,
           borderRadiusSM: 12,
           borderRadiusXS: 12,
@@ -77,7 +79,7 @@ class AppThemeComponent {
           dotActiveWidth: 30,
         },
         Timeline: {
-          fontSize: 20,
+          fontSize: 16,
           itemPaddingBottom: 30,
 
           margin: 30,

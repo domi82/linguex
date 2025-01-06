@@ -7,6 +7,7 @@ import useResponsiveLayout from "../../components/LayoutComponent/UseResponsiveL
 import homeImage from "../../resources/images/home-image.svg";
 import { ReactComponent as XIcon } from "../../resources/images/x-icon.svg";
 import styles from "./HomePage.module.scss";
+import "./HomePage.css";
 import PublicLayoutComponent from "../../components/LayoutComponent/PublicLayoutComponent/PublicLayoutComponent";
 
 /**
@@ -156,12 +157,10 @@ const HomePage: React.FC = () => {
                   </Space>
                 </>
               }
-              actions={[
-                <Link to="/blog">
-                  <Button type="primary">View my blog section</Button>
-                </Link>,
-              ]}
               tabList={tab1List}
+              tabProps={{
+                tabBarStyle: { borderBottom: "none" },
+              }}
               activeTabKey={activeTabKey1}
               onTabChange={onTab1Change}
             >
@@ -205,16 +204,6 @@ const HomePage: React.FC = () => {
                   </Space>
                 </>
               }
-              actions={[
-                <a
-                  className={styles.options}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href="https://agrisens.es"
-                >
-                  <Button type="primary">View this project</Button>
-                </a>,
-              ]}
               tabList={tab2List}
               activeTabKey={activeTabKey1}
               onTabChange={onTab2Change}
@@ -259,15 +248,6 @@ const HomePage: React.FC = () => {
                   </Space>
                 </>
               }
-              actions={[
-                <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href="https://taxfen.com"
-                >
-                  <Button type="primary">View this project</Button>
-                </a>,
-              ]}
               tabList={tab3List}
               activeTabKey={activeTabKey1}
               onTabChange={onTab3Change}
