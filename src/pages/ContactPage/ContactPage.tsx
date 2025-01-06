@@ -37,9 +37,9 @@ const ContactPage: React.FC = () => {
           lg={16}
           xl={12}
         >
-          <h2>
+          <h3>
             <FormattedMessage id="contact.header" />
-          </h2>
+          </h3>
           <p>
             <FormattedMessage id="contact.description.1" />
           </p>
@@ -48,7 +48,7 @@ const ContactPage: React.FC = () => {
           </p>
           <div className={styles.email}>
             <MailOutlined className={styles.icon} />
-            <a href="mailto:info@linguex.eu">info@linguex.eu</a>
+            <a href="mailto:szczes@gmail.com">szczes@gmail.com</a>
           </div>
         </Col>
         <Col

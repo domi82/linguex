@@ -34,9 +34,9 @@ const AboutPage: React.FC = () => {
     <PublicLayoutComponent>
       <Row>
         <Col className={styles.heading} span={24}>
-          <h2>
+          <h3>
             <FormattedMessage id="about.header" />
-          </h2>
+          </h3>
           <p>
             <FormattedMessage id="about.description" />
           </p>

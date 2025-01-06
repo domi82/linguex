@@ -26,13 +26,13 @@ const BlogPage: React.FC = () => {
   /*** VISUAL ***/
 
   return (
-    <PublicLayoutComponent>
-      <div className={styles.background}>
+    <div className={styles.background}>
+      <PublicLayoutComponent>
         <Row>
           <Col className={styles.heading} span={24}>
-            <h2>
+            <h3>
               <FormattedMessage id="blog.header" />
-            </h2>
+            </h3>
             <p>
               <FormattedMessage id="blog.description" />
             </p>
@@ -60,8 +60,8 @@ const BlogPage: React.FC = () => {
               </Col>
             ))}
         </Row>
-      </div>
-    </PublicLayoutComponent>
+      </PublicLayoutComponent>
+    </div>
   );
 };
 

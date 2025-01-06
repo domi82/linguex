@@ -30,8 +30,8 @@ class AppThemeComponent {
           padding: 20,
         },
         Menu: {
-          itemSelectedBg: "#94B4C6",
-          itemSelectedColor: "#fff",
+          itemSelectedBg: "pink",
+          itemSelectedColor: "black",
           itemBorderRadius: 12,
         },
         Input: {
