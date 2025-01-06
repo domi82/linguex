@@ -4,7 +4,6 @@ import { useState } from "react";
 import { FormattedMessage } from "react-intl";
 import { Link } from "react-router-dom";
 import useResponsiveLayout from "../../components/LayoutComponent/UseResponsiveLayout/UseResponsiveLayout";
-import portrait from "../../resources/images/portrait.svg";
 import homeImage from "../../resources/images/home-image.svg";
 import { ReactComponent as XIcon } from "../../resources/images/x-icon.svg";
 import styles from "./HomePage.module.scss";
@@ -88,7 +87,7 @@ const HomePage: React.FC = () => {
     <PublicLayoutComponent>
       <div className={styles.section1}>
         <Row>
-          <Col span={24} lg={12} className={styles.text}>
+          <Col xs={24} sm={24} md={24} lg={12} className={styles.text}>
             <h3>
               <FormattedMessage id="home.welcome.header" />
             </h3>
@@ -99,12 +98,11 @@ const HomePage: React.FC = () => {
               <FormattedMessage id="home.welcome.text.2" />
             </p>
           </Col>
-
-          <Col span={24} lg={12} className={styles.image}>
+          <Col xs={24} sm={24} md={24} lg={12}>
             <div>
               <Image
                 src={homeImage}
-                alt="homeImage"
+                alt="Image of a frontend developer"
                 preview={false}
                 className={styles.mainImage}
               />
@@ -114,14 +112,14 @@ const HomePage: React.FC = () => {
       </div>
       <div className={styles.section2}>
         <Row>
-          <Col span={24} className={styles.heading}>
-            <h2>
+          <Col span={24} className={styles.text}>
+            <h3>
               <FormattedMessage id="home.projects.header" />
-            </h2>
+            </h3>
           </Col>
         </Row>
         <Row gutter={[14, 14]}>
-          <Col xs={24} md={8}>
+          <Col xs={24} sm={24} md={24} lg={8}>
             <Card
               className={styles.card}
               title={
@@ -159,8 +157,8 @@ const HomePage: React.FC = () => {
                 </>
               }
               actions={[
-                <Link to="/blog" className={styles.options}>
-                  <Button>View my blog section</Button>
+                <Link to="/blog">
+                  <Button type="primary">View my blog section</Button>
                 </Link>,
               ]}
               tabList={tab1List}
@@ -170,7 +168,7 @@ const HomePage: React.FC = () => {
               {content1List[activeTabKey1]}
             </Card>
           </Col>
-          <Col xs={24} md={8}>
+          <Col xs={24} sm={24} md={24} lg={8}>
             <Card
               className={styles.card}
               title={
@@ -214,7 +212,7 @@ const HomePage: React.FC = () => {
                   rel="noopener noreferrer"
                   href="https://agrisens.es"
                 >
-                  <Button>View this project</Button>
+                  <Button type="primary">View this project</Button>
                 </a>,
               ]}
               tabList={tab2List}
@@ -224,7 +222,7 @@ const HomePage: React.FC = () => {
               {content2List[activeTabKey2]}
             </Card>
           </Col>
-          <Col xs={24} md={8}>
+          <Col xs={24} sm={24} md={24} lg={8}>
             <Card
               className={styles.card}
               title={
@@ -267,7 +265,7 @@ const HomePage: React.FC = () => {
                   rel="noopener noreferrer"
                   href="https://taxfen.com"
                 >
-                  <Button>View this project</Button>
+                  <Button type="primary">View this project</Button>
                 </a>,
               ]}
               tabList={tab3List}
@@ -279,13 +277,12 @@ const HomePage: React.FC = () => {
           </Col>
         </Row>
       </div>
-
       <div className={styles.section3}>
         <Row>
-          <Col span={24} className={styles.heading}>
-            <h2>
+          <Col span={24} className={styles.text}>
+            <h3>
               <FormattedMessage id="home.technologies.header" />
-            </h2>
+            </h3>
           </Col>
         </Row>
         <Row>
@@ -318,10 +315,10 @@ const HomePage: React.FC = () => {
 
       <div className={styles.section4}>
         <Row>
-          <Col span={24} className={styles.heading}>
-            <h2>
+          <Col span={24} className={styles.text}>
+            <h3>
               <FormattedMessage id="home.contact.header" />
-            </h2>
+            </h3>
             <p>
               <FormattedMessage id="home.contact.description" />
             </p>

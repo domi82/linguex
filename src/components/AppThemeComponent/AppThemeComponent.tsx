@@ -12,7 +12,7 @@ class AppThemeComponent {
       },
       components: {
         Button: {
-          colorPrimary: "#fda0ca",
+          colorPrimary: "#F955C8",
           primaryShadow: "transparen",
         },
         Modal: {
@@ -66,8 +66,8 @@ class AppThemeComponent {
         },
         Carousel: {
           colorBgContainer: "gray",
-          colorText: "gray",
-          fontFamily: "Poppins",
+          colorText: "black",
+          fontFamily: "Lora",
           fontSize: 100,
           arrowSize: 40,
           arrowOffset: 60,
