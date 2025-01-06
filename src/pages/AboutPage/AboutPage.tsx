@@ -50,6 +50,9 @@ const AboutPage: React.FC = () => {
           <p>
             <FormattedMessage id="about.description3" />
           </p>
+          <p>
+            <FormattedMessage id="about.description4" />
+          </p>
         </Col>
         <Col span={14} className={styles.timeline}>
           <Timeline
