@@ -1,78 +1,65 @@
-
-    
-        .contactDetails {
-            padding-left:60px;
-            h3{
-                
-                font-weight: 400;
-                font-size: 60px;
-        }
-        p {
-           
-            
-            font-size: 35px;
-            text-align: left;
-        }
-        .email {
-            color: #F955C8;
-            text-align: left;
-            font-size: 35px;
-            .icon{
-            padding-right:20px;
-        }
+.contactDetails {
+  padding-left: 60px;
+  h3 {
+    font-weight: 400;
+    font-size: 60px;
   }
-     }
-        .imageContainer {
-            width: 100%;
-            padding-top: 100px;
-            padding-right: 40px;
-            text-align: center;
-            .image {
-                width: 150%;
-                padding-right: 30px;
-            }
-        }
-    
-    
-       
- 
-
-
-    
-   
-    .mobile {
-        .top {
-            padding: 30px 20px 0 20px;
-        }
-        .description {
-            background-color: #fff;
-            width: 100%;
-            padding-right: 50px;
-            padding-left: 50px;
-            font-size: 20px;
-            padding-bottom: 40px;
-            text-align: center;
-
-            h2 {
-                color: #548064;
-                padding-bottom: 20px;
-                padding-top: 50px;
-            }
-            .icon {
-                padding-right: 7px;
-                color: #548064;
-            }
-        }
-        .imageContainer {
-            width: 50%;
-            padding-top: 0px;
-            padding-right: 0px;
-            text-align: center;
-
-            .image {
-                width: 90%;
-                padding-right: 0px;
-            }
-        }
+  p {
+    font-size: 35px;
+    text-align: left;
+  }
+  .email {
+    color: #f955c8;
+    text-align: left;
+    font-size: 35px;
+    .icon {
+      padding-right: 20px;
     }
+  }
+}
+.imageContainer {
+  width: 100%;
+  padding-top: 100px;
+  padding-right: 40px;
+  text-align: center;
+  .image {
+    width: 150%;
+    padding-right: 30px;
+  }
+}
 
+.mobile {
+  .top {
+    padding: 30px 20px 0 20px;
+  }
+  .description {
+    background-color: #fff;
+    width: 100%;
+    padding-right: 50px;
+    padding-left: 50px;
+    font-size: 20px;
+    padding-bottom: 40px;
+    text-align: center;
+
+    h2 {
+      color: #548064;
+      padding-bottom: 20px;
+      padding-top: 50px;
+    }
+    .icon {
+      padding-right: 7px;
+      color: #548064;
+    }
+  }
+  .imageContainer {
+    width: 50%;
+    padding-top: 0px;
+    padding-right: 0px;
+    text-align: center;
+
+    .image {
+      width: 90%;
+      padding-right: 0px;
+    }
+  }
+}
