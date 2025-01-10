@@ -1,61 +1,55 @@
-.heading {
-  padding-left: 50px;
-  h3 {
-    font-weight: 400;
-    font-size: 60px;
-  }
-  p {
-    font-size: 35px;
+.container {
+  .heading {
+    padding-left: 50px;
+    h3 {
+      font-weight: 400;
+      font-size: 60px;
+    }
+    p {
+      font-size: 35px;
 
-    padding-bottom: 40px;
-    text-align: left;
+      padding-bottom: 40px;
+      text-align: left;
+    }
   }
-}
-.description {
-  padding-left: 50px;
-  padding-right: 20px;
-  font-size: 20px;
-}
-.timeline {
-  padding-left: 50px;
-  .icon {
-    height: 30px;
-    color: "red";
+  .description {
+    padding-left: 50px;
+    padding-right: 20px;
+    font-size: 20px;
+  }
+  .timeline {
+    padding-left: 50px;
+    .icon {
+      height: 30px;
+      color: "red";
+    }
   }
 }
 
 .mobile {
-  .top {
-    padding: 30px 20px 0 20px;
+  .heading {
+    padding-left: 40px;
+    h3 {
+      font-weight: 400;
+      font-size: 30px;
+      padding-top: 10px;
+    }
+    p {
+      font-weight: 400;
+      font-size: 20px;
+      padding-bottom: 10px;
+    }
   }
   .description {
-    background-color: #fff;
-    width: 100%;
-    padding-right: 50px;
-    padding-left: 50px;
-    font-size: 20px;
-    padding-bottom: 40px;
-    text-align: center;
-
-    h2 {
-      color: #548064;
-      padding-bottom: 20px;
-      padding-top: 50px;
-    }
-    .icon {
-      padding-right: 7px;
-      color: #548064;
-    }
+    padding-left: 40px;
+    font-size: 18px;
+    padding-bottom: 25px;
   }
-  .imageContainer {
-    width: 50%;
-    padding-top: 0px;
-    padding-right: 0px;
-    text-align: center;
-
-    .image {
-      width: 90%;
-      padding-right: 0px;
+  .timeline {
+    padding-left: 30px;
+    .icon {
+      height: 30px;
+      color: "red";
     }
   }
 }

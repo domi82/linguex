@@ -2,6 +2,7 @@ import { Col, Image, Layout, Row, Space } from "antd";
 import React, { PropsWithChildren } from "react";
 import { Link } from "react-router-dom";
 import { ReactComponent as LogoIcon } from "./../../../resources/images/logo.svg";
+import { ReactComponent as XIcon } from "./../../../resources/images/x-icon.svg";
 
 import styles from "./PublicLayoutComponent.module.scss";
 import { FormattedMessage } from "react-intl";
@@ -24,9 +25,9 @@ const PublicLayoutComponent: React.FC<Props> = (props) => {
 
   return (
     <Layout className={styles.layout}>
-      <Header className={styles.header}>
+      <Header className={desktop ? styles.header : styles.mobileHeader}>
         <Link to="/" className={styles.logo}>
-          <LogoIcon />{" "}
+          {desktop ? <LogoIcon /> : <XIcon />}
         </Link>
         <Space size="large" className={styles.options}>
           <Link to="/about" className={styles.item}>

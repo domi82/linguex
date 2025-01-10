@@ -37,8 +37,16 @@ const HomePage: React.FC = () => {
   /*** VISUAL ***/
 
   const content1List: Record<string, React.ReactNode> = {
-    tab1: <FormattedMessage id="home.projects.project1.summary" />,
-    tab2: <FormattedMessage id="home.projects.project1.technologies" />,
+    tab1: (
+      <div className={styles.description}>
+        <FormattedMessage id="home.projects.project1.summary" />
+      </div>
+    ),
+    tab2: (
+      <div className={styles.description}>
+        <FormattedMessage id="home.projects.project1.technologies" />
+      </div>
+    ),
   };
 
   const tab1List = [
@@ -53,8 +61,16 @@ const HomePage: React.FC = () => {
   ];
 
   const content2List: Record<string, React.ReactNode> = {
-    tab3: <FormattedMessage id="home.projects.project2.description" />,
-    tab4: <FormattedMessage id="home.projects.project2.technologies" />,
+    tab3: (
+      <div className={styles.description}>
+        <FormattedMessage id="home.projects.project2.description" />
+      </div>
+    ),
+    tab4: (
+      <div className={styles.description}>
+        <FormattedMessage id="home.projects.project2.technologies" />
+      </div>
+    ),
   };
 
   const tab2List = [
@@ -69,8 +85,16 @@ const HomePage: React.FC = () => {
   ];
 
   const content3List: Record<string, React.ReactNode> = {
-    tab5: <FormattedMessage id="home.projects.project3.description" />,
-    tab6: <FormattedMessage id="home.projects.project3.technologies" />,
+    tab5: (
+      <div className={styles.description}>
+        <FormattedMessage id="home.projects.project3.description" />
+      </div>
+    ),
+    tab6: (
+      <div className={styles.description}>
+        <FormattedMessage id="home.projects.project3.technologies" />
+      </div>
+    ),
   };
 
   const tab3List = [
@@ -86,236 +110,236 @@ const HomePage: React.FC = () => {
 
   return (
     <PublicLayoutComponent>
-      <div className={styles.section1}>
-        <Row>
-          <Col xs={24} sm={24} md={24} lg={12} className={styles.text}>
-            <h3>
-              <FormattedMessage id="home.welcome.header" />
-            </h3>
-            <p>
-              <FormattedMessage id="home.welcome.text.1" />
-            </p>
-            <p>
-              <FormattedMessage id="home.welcome.text.2" />
-            </p>
-          </Col>
-          <Col xs={24} sm={24} md={24} lg={12}>
-            <div>
+      <div className={`${styles.container} ${!desktop && styles.mobile}`}>
+        <div className={styles.section1}>
+          <Row>
+            <Col xs={24} sm={24} md={24} lg={12} className={styles.text}>
+              <h2>
+                <FormattedMessage id="home.welcome.header" />
+              </h2>
+              <p>
+                <FormattedMessage id="home.welcome.text.1" />
+              </p>
+              <p>
+                <FormattedMessage id="home.welcome.text.2" />
+              </p>
+            </Col>
+            <Col xs={24} sm={24} md={24} lg={12}>
               <Image
                 src={homeImage}
                 alt="Image of a frontend developer"
                 preview={false}
                 className={styles.mainImage}
               />
-            </div>
-          </Col>
-        </Row>
-      </div>
-      <div className={styles.section2}>
-        <Row>
-          <Col span={24} className={styles.text}>
-            <h3>
-              <FormattedMessage id="home.projects.header" />
-            </h3>
-          </Col>
-        </Row>
-        <Row gutter={[14, 14]}>
-          <Col xs={24} sm={24} md={24} lg={8}>
-            <Card
-              className={styles.card}
-              title={
-                <>
-                  <div className={styles.title}>
-                    <Icon component={XIcon} className={styles.icon} />
-                    <p className={styles.text}>
-                      <FormattedMessage id="home.projects.project1.header" />
-                    </p>
-                  </div>
+            </Col>
+          </Row>
+        </div>
+        <div className={styles.section2}>
+          <Row>
+            <Col span={24} className={styles.text}>
+              <h3>
+                <FormattedMessage id="home.projects.header" />
+              </h3>
+            </Col>
+          </Row>
+          <Row gutter={[14, 14]}>
+            <Col xs={24} sm={24} md={24} lg={8}>
+              <Card
+                className={styles.card}
+                title={
+                  <>
+                    <div className={styles.title}>
+                      <Icon component={XIcon} className={styles.icon} />
+                      <p className={styles.text}>
+                        <FormattedMessage id="home.projects.project1.header" />
+                      </p>
+                    </div>
 
-                  <Space>
-                    <Button
-                      type="dashed"
-                      size="large"
-                      className={styles.buttons}
-                    >
-                      Frontend Development
-                    </Button>
-                    <Button
-                      type="dashed"
-                      size="large"
-                      className={styles.buttons}
-                    >
-                      UX Writing
-                    </Button>
-                    <Button
-                      type="dashed"
-                      size="large"
-                      className={styles.buttons}
-                    >
-                      UI
-                    </Button>
-                  </Space>
-                </>
-              }
-              tabList={tab1List}
-              tabProps={{
-                tabBarStyle: { borderBottom: "none" },
-              }}
-              activeTabKey={activeTabKey1}
-              onTabChange={onTab1Change}
-            >
-              {content1List[activeTabKey1]}
-            </Card>
-          </Col>
-          <Col xs={24} sm={24} md={24} lg={8}>
-            <Card
-              className={styles.card}
-              title={
-                <>
-                  <div className={styles.title}>
-                    <Icon component={XIcon} className={styles.icon} />
-                    <p className={styles.text}>
-                      <FormattedMessage id="home.projects.project2.header" />
-                    </p>
-                  </div>
-
-                  <Space>
-                    <Button
-                      type="dashed"
-                      size="large"
-                      className={styles.buttons}
-                    >
-                      Frontend Development
-                    </Button>
-                    <Button
-                      type="dashed"
-                      size="large"
-                      className={styles.buttons}
-                    >
-                      UX Writing
-                    </Button>
-                    <Button
-                      type="dashed"
-                      size="large"
-                      className={styles.buttons}
-                    >
-                      UI
-                    </Button>
-                  </Space>
-                </>
-              }
-              tabList={tab2List}
-              activeTabKey={activeTabKey1}
-              onTabChange={onTab2Change}
-            >
-              {content2List[activeTabKey2]}
-            </Card>
-          </Col>
-          <Col xs={24} sm={24} md={24} lg={8}>
-            <Card
-              className={styles.card}
-              title={
-                <>
-                  <div className={styles.title}>
-                    <Icon component={XIcon} className={styles.icon} />
-                    <p className={styles.text}>
-                      <FormattedMessage id="home.projects.project3.header" />
-                    </p>
-                  </div>
-
-                  <Space>
-                    <Button
-                      type="dashed"
-                      size="large"
-                      className={styles.buttons}
-                    >
-                      Frontend Development
-                    </Button>
-                    <Button
-                      type="dashed"
-                      size="large"
-                      className={styles.buttons}
-                    >
-                      UX Writing
-                    </Button>
-                    <Button
-                      type="dashed"
-                      size="large"
-                      className={styles.buttons}
-                    >
-                      UI
-                    </Button>
-                  </Space>
-                </>
-              }
-              tabList={tab3List}
-              activeTabKey={activeTabKey1}
-              onTabChange={onTab3Change}
-            >
-              {content3List[activeTabKey3]}
-            </Card>
-          </Col>
-        </Row>
-      </div>
-      <div className={styles.section3}>
-        <Row>
-          <Col span={24} className={styles.text}>
-            <h3>
-              <FormattedMessage id="home.technologies.header" />
-            </h3>
-          </Col>
-        </Row>
-        <Row>
-          <Col span={24} className={styles.carrousel}>
-            <Carousel autoplay infinite={false}>
-              <div>
-                <h3 className={styles.slide}>
-                  <FormattedMessage id="home.technologies.description1" />
-                </h3>
-              </div>
-              <div>
-                <h3 className={styles.slide}>
-                  <FormattedMessage id="home.technologies.description2" />
-                </h3>
-              </div>
-              <div>
-                <h3 className={styles.slide}>
-                  <FormattedMessage id="home.technologies.description3" />
-                </h3>
-              </div>
-              <div>
-                <h3 className={styles.slide}>
-                  <FormattedMessage id="home.technologies.description4" />
-                </h3>
-              </div>
-            </Carousel>
-          </Col>
-        </Row>
-      </div>
-
-      <div className={styles.section4}>
-        <Row>
-          <Col span={24} className={styles.text}>
-            <h3>
-              <FormattedMessage id="home.contact.header" />
-            </h3>
-            <p>
-              <FormattedMessage id="home.contact.description" />
-            </p>
-
-            <Link to="/contact">
-              <Button
-                type="primary"
-                className={styles.buttons}
-                icon={<MailOutlined className={styles.icon} />}
+                    <Space>
+                      <Button
+                        type="dashed"
+                        size="large"
+                        className={styles.buttons}
+                      >
+                        Frontend Development
+                      </Button>
+                      <Button
+                        type="dashed"
+                        size="large"
+                        className={styles.buttons}
+                      >
+                        UX Writing
+                      </Button>
+                      <Button
+                        type="dashed"
+                        size="large"
+                        className={styles.buttons}
+                      >
+                        UI
+                      </Button>
+                    </Space>
+                  </>
+                }
+                tabList={tab1List}
+                tabProps={{
+                  tabBarStyle: { borderBottom: "none" },
+                }}
+                activeTabKey={activeTabKey1}
+                onTabChange={onTab1Change}
               >
-                {desktop && (
-                  <FormattedMessage id="button.contact" tagName="span" />
-                )}
-              </Button>
-            </Link>
-          </Col>
-        </Row>
+                {content1List[activeTabKey1]}
+              </Card>
+            </Col>
+            <Col xs={24} sm={24} md={24} lg={8}>
+              <Card
+                className={styles.card}
+                title={
+                  <>
+                    <div className={styles.title}>
+                      <Icon component={XIcon} className={styles.icon} />
+                      <p className={styles.text}>
+                        <FormattedMessage id="home.projects.project2.header" />
+                      </p>
+                    </div>
+
+                    <Space>
+                      <Button
+                        type="dashed"
+                        size="large"
+                        className={styles.buttons}
+                      >
+                        Frontend Development
+                      </Button>
+                      <Button
+                        type="dashed"
+                        size="large"
+                        className={styles.buttons}
+                      >
+                        UX Writing
+                      </Button>
+                      <Button
+                        type="dashed"
+                        size="large"
+                        className={styles.buttons}
+                      >
+                        UI
+                      </Button>
+                    </Space>
+                  </>
+                }
+                tabList={tab2List}
+                activeTabKey={activeTabKey1}
+                onTabChange={onTab2Change}
+              >
+                {content2List[activeTabKey2]}
+              </Card>
+            </Col>
+            <Col xs={24} sm={24} md={24} lg={8}>
+              <Card
+                className={styles.card}
+                title={
+                  <>
+                    <div className={styles.title}>
+                      <Icon component={XIcon} className={styles.icon} />
+                      <p className={styles.text}>
+                        <FormattedMessage id="home.projects.project3.header" />
+                      </p>
+                    </div>
+
+                    <Space>
+                      <Button
+                        type="dashed"
+                        size="large"
+                        className={styles.buttons}
+                      >
+                        Frontend Development
+                      </Button>
+                      <Button
+                        type="dashed"
+                        size="large"
+                        className={styles.buttons}
+                      >
+                        UX Writing
+                      </Button>
+                      <Button
+                        type="dashed"
+                        size="large"
+                        className={styles.buttons}
+                      >
+                        UI
+                      </Button>
+                    </Space>
+                  </>
+                }
+                tabList={tab3List}
+                activeTabKey={activeTabKey1}
+                onTabChange={onTab3Change}
+              >
+                {content3List[activeTabKey3]}
+              </Card>
+            </Col>
+          </Row>
+        </div>
+        <div className={styles.section3}>
+          <Row>
+            <Col span={24} className={styles.text}>
+              <h3>
+                <FormattedMessage id="home.technologies.header" />
+              </h3>
+            </Col>
+          </Row>
+          <Row>
+            <Col span={24} className={styles.carrousel}>
+              <Carousel autoplay infinite={false}>
+                <div>
+                  <h3 className={styles.slide}>
+                    <FormattedMessage id="home.technologies.description1" />
+                  </h3>
+                </div>
+                <div>
+                  <h3 className={styles.slide}>
+                    <FormattedMessage id="home.technologies.description2" />
+                  </h3>
+                </div>
+                <div>
+                  <h3 className={styles.slide}>
+                    <FormattedMessage id="home.technologies.description3" />
+                  </h3>
+                </div>
+                <div>
+                  <h3 className={styles.slide}>
+                    <FormattedMessage id="home.technologies.description4" />
+                  </h3>
+                </div>
+              </Carousel>
+            </Col>
+          </Row>
+        </div>
+
+        <div className={styles.section4}>
+          <Row>
+            <Col span={24} className={styles.text}>
+              <h3>
+                <FormattedMessage id="home.contact.header" />
+              </h3>
+              <p>
+                <FormattedMessage id="home.contact.description" />
+              </p>
+
+              <Link to="/contact">
+                <Button
+                  type="primary"
+                  className={styles.buttons}
+                  icon={<MailOutlined className={styles.icon} />}
+                >
+                  {desktop && (
+                    <FormattedMessage id="button.contact" tagName="span" />
+                  )}
+                </Button>
+              </Link>
+            </Col>
+          </Row>
+        </div>
       </div>
     </PublicLayoutComponent>
   );
