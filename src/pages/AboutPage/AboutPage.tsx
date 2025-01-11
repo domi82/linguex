@@ -95,7 +95,7 @@ const AboutPage: React.FC = () => {
                 {
                   color: "gray",
                   children:
-                    "I left Cisco and started to work as a Junior Frontend Developer.",
+                    "In 2022 I left Cisco and started to work as a Junior Frontend Developer.",
                 },
               ]}
             />

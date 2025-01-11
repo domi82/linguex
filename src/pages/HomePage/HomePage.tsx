@@ -115,7 +115,11 @@ const HomePage: React.FC = () => {
           <Row>
             <Col xs={24} sm={24} md={24} lg={12} className={styles.text}>
               <h2>
-                <FormattedMessage id="home.welcome.header" />
+                {desktop ? (
+                  <FormattedMessage id="home.welcome.header" />
+                ) : (
+                  <FormattedMessage id="home.welcome.mobile.header" />
+                )}
               </h2>
               <p>
                 <FormattedMessage id="home.welcome.text.1" />
@@ -142,7 +146,7 @@ const HomePage: React.FC = () => {
               </h3>
             </Col>
           </Row>
-          <Row gutter={[14, 14]}>
+          <Row gutter={[16, { xs: 8, sm: 8, md: 8, lg: 16 }]}>
             <Col xs={24} sm={24} md={24} lg={8}>
               <Card
                 className={styles.card}
@@ -158,21 +162,21 @@ const HomePage: React.FC = () => {
                     <Space>
                       <Button
                         type="dashed"
-                        size="large"
+                        size={desktop ? "large" : "small"}
                         className={styles.buttons}
                       >
                         Frontend Development
                       </Button>
                       <Button
                         type="dashed"
-                        size="large"
+                        size={desktop ? "large" : "small"}
                         className={styles.buttons}
                       >
-                        UX Writing
+                        UX
                       </Button>
                       <Button
                         type="dashed"
-                        size="large"
+                        size={desktop ? "large" : "small"}
                         className={styles.buttons}
                       >
                         UI
@@ -205,21 +209,21 @@ const HomePage: React.FC = () => {
                     <Space>
                       <Button
                         type="dashed"
-                        size="large"
+                        size={desktop ? "large" : "small"}
                         className={styles.buttons}
                       >
                         Frontend Development
                       </Button>
                       <Button
                         type="dashed"
-                        size="large"
+                        size={desktop ? "large" : "small"}
                         className={styles.buttons}
                       >
                         UX Writing
                       </Button>
                       <Button
                         type="dashed"
-                        size="large"
+                        size={desktop ? "large" : "small"}
                         className={styles.buttons}
                       >
                         UI
@@ -249,21 +253,21 @@ const HomePage: React.FC = () => {
                     <Space>
                       <Button
                         type="dashed"
-                        size="large"
+                        size={desktop ? "large" : "small"}
                         className={styles.buttons}
                       >
                         Frontend Development
                       </Button>
                       <Button
                         type="dashed"
-                        size="large"
+                        size={desktop ? "large" : "small"}
                         className={styles.buttons}
                       >
-                        UX Writing
+                        UX
                       </Button>
                       <Button
                         type="dashed"
-                        size="large"
+                        size={desktop ? "large" : "small"}
                         className={styles.buttons}
                       >
                         UI

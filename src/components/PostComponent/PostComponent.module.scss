@@ -1,35 +1,56 @@
 .card {
-       
-          
-    margin-bottom: 20px;
-    margin-left:30px;
-    border: 1px solid #cfd3d4;
-    padding-bottom:20px;
-  
-   
-    
-    
-.avatar{
-margin-right:-150px;
+  margin-bottom: 20px;
+  margin-left: 30px;
+  border: 1px solid #cfd3d4;
+  padding-bottom: 20px;
+
+  .avatar {
+    margin-right: -150px;
     .image {
-        padding-top: 30px;
-        font-size: 20px;
-        width:50%;
-        
-       
+      padding-top: 30px;
+      font-size: 20px;
+      width: 50%;
     }
-}
-    .title {
-        
-        font-size: 30px;
-        align-content: left;
-    }
-    .buttons {
-        size:'large';
-        
-    }
-   .description {
-       font-size: 20px;
-}
+  }
+  .title {
+    font-size: 30px;
+    align-content: left;
+  }
+  .buttons {
+    size: "large";
+  }
+  .description {
+    font-size: 20px;
+  }
+  .date {
+    font-size: 16px;
+  }
 }
 
+.mobileCard {
+  margin-bottom: 20px;
+  margin-top: 30px;
+  border: 1px solid #cfd3d4;
+  padding-bottom: 20px;
+
+  .avatar {
+    margin-right: -250px;
+    .mobileImage {
+      padding-top: 30px;
+      font-size: 20px;
+      width: 10%;
+    }
+  }
+  .title {
+    font-size: 20px;
+  }
+  .buttons {
+    size: "small";
+  }
+  .description {
+    font-size: 15px;
+  }
+  .date {
+    font-size: 14px;
+  }
+}

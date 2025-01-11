@@ -1,12 +1,12 @@
-import { Col, Image, Layout, Row, Space } from "antd";
+import { Col, Layout, Row, Space } from "antd";
 import React, { PropsWithChildren } from "react";
 import { Link } from "react-router-dom";
 import { ReactComponent as LogoIcon } from "./../../../resources/images/logo.svg";
 import { ReactComponent as XIcon } from "./../../../resources/images/x-icon.svg";
 
-import styles from "./PublicLayoutComponent.module.scss";
 import { FormattedMessage } from "react-intl";
 import useResponsiveLayout from "../UseResponsiveLayout/UseResponsiveLayout";
+import styles from "./PublicLayoutComponent.module.scss";
 
 const { Header, Footer } = Layout;
 
@@ -55,9 +55,6 @@ const PublicLayoutComponent: React.FC<Props> = (props) => {
           <Space className={styles.links} size="large">
             <Link to="/legal-notice" className={styles.link}>
               <FormattedMessage id="footer.legalNotice" />
-            </Link>
-            <Link to="/privacy-policy" className={styles.link}>
-              <FormattedMessage id="footer.privacyPolicy" />
             </Link>
           </Space>
         </div>

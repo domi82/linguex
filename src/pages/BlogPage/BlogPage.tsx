@@ -28,38 +28,40 @@ const BlogPage: React.FC = () => {
   return (
     <div className={styles.background}>
       <PublicLayoutComponent>
-        <Row>
-          <Col className={styles.heading} span={24}>
-            <h3>
-              <FormattedMessage id="blog.header" />
-            </h3>
-            <p>
-              <FormattedMessage id="blog.description" />
-            </p>
-          </Col>
-        </Row>
+        <div className={`${styles.container} ${!desktop && styles.mobile}`}>
+          <Row>
+            <Col className={styles.heading} span={24}>
+              <h3>
+                <FormattedMessage id="blog.header" />
+              </h3>
+              <p>
+                <FormattedMessage id="blog.description" />
+              </p>
+            </Col>
+          </Row>
 
-        <Row className={styles.posts}>
-          <Col xs={6} md={6} lg={6}>
-            <BlogSidebar onSelect={onSelect} />
-          </Col>
-          {posts
-            .filter((p) => p.title === selectedPost)
-            .map((p) => (
-              <Col xs={18} md={18} lg={18}>
-                <PostComponent
-                  date={p.date}
-                  label={p.label!}
-                  title={p.title!}
-                  content={p.content!}
-                  heading1={p.heading1}
-                  content1={p.content1}
-                  heading2={p.heading2}
-                  content2={p.content2}
-                />
-              </Col>
-            ))}
-        </Row>
+          <Row className={styles.posts}>
+            <Col xs={24} md={24} lg={6}>
+              <BlogSidebar onSelect={onSelect} />
+            </Col>
+            {posts
+              .filter((p) => p.title === selectedPost)
+              .map((p) => (
+                <Col xs={24} md={24} lg={18}>
+                  <PostComponent
+                    date={p.date}
+                    label={p.label!}
+                    title={p.title!}
+                    content={p.content!}
+                    heading1={p.heading1}
+                    content1={p.content1}
+                    heading2={p.heading2}
+                    content2={p.content2}
+                  />
+                </Col>
+              ))}
+          </Row>
+        </div>
       </PublicLayoutComponent>
     </div>
   );
