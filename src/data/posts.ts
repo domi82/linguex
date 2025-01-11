@@ -19,7 +19,16 @@ const posts:Post[] =[
         content1:'Next.js has quickly become one of the most popular frameworks for building modern web applications. Its blend of server-side rendering (SSR), static site generation (SSG), and client-side rendering (CSR) makes it a versatile choice for developers. Whether you’re building a personal portfolio, an e-commerce platform, or a large-scale enterprise application, Next.js has you covered. The main benefits of using Next.js are: performance optimization, SEO-friendly design, and powerful routing.',
         heading2: 'What did I learn?',
         content2:'The workshop started with a short introduction into Next.js, its core concepts and architecture. Using hands-on exercises, we have learned how to create dynamic routes, nested routing, and custom routes. We have also discovered when and how to use Server-Side Rendering (SSR) and Static Site Generation (SSG), and explored styling with layouts and templates. I am glad that I had the opportunity to take part in this event and I am looking forward to the new ones!'
-    }
+    },
+     {label:'AWS',
+        date: "11th Jan 2025",
+        title:"Cache in CloudFront",
+        content:'If after uploading a new build of your app into the Amazon S3 bucket your browser still loads the old version of your site, this might be caused by cached files in CloudFront.',
+        heading1:'How cache is used in CloudFront?',
+        content1:'CloudFront reduces the number of requests that the origin server must respond to directly by using cached files. This way more objects are served from CloudFront edge locations, which are closer to your app users. This reduces the load time and latency.',
+        heading2: 'How to fix this issue?',
+        content2:'In the distribution lists in the Amazon CloudFront console, select the distribution responsible for your site. In the distribution settings, select the Invalidations tab, and then click Create invalidation. In the object paths field, add the paths to the files you would like to invalidate. If you would like to invalidate all the cached files, type the wildcard character(/*) as your path. After clicking Create invalidation it takes about 1 minute to refresh the cache. Once it is done, your website should display correctly.'
+    } 
 
 ]
 
