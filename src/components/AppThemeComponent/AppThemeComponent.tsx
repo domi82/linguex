@@ -35,6 +35,7 @@ class AppThemeComponent {
           itemSelectedBg: "pink",
           itemSelectedColor: "black",
           itemBorderRadius: 12,
+          padding: 10,
         },
         Input: {
           colorBgContainer: "#E3EBE6",
