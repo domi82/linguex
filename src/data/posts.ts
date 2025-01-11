@@ -25,8 +25,8 @@ const posts:Post[] =[
         title:"Cache in CloudFront",
         content:'If after uploading a new build of your app into the Amazon S3 bucket your browser still loads the old version of your site, this might be caused by cached files in CloudFront.',
         heading1:'How cache is used in CloudFront?',
-        content1:'CloudFront reduces the number of requests that the origin server must respond to directly by using cached files. This way more objects are served from CloudFront edge locations, which are closer to your app users. This reduces the load time and latency.',
-        heading2: 'How to fix this issue?',
+        content1:'CloudFront speeds up distribution of static and dynamic web content by using a network of data centers (edge locations). These data centers can store copies of our files (cached files) and provide them to the users depending on their request and location. When a user requests content, the request is rooted to the location that has the lowest latency (time delay). This reduces the number of requests that the origin server must respond to directly and improves the load time. When we upload a newer version of our app to S3, we need to make sure that the cached files in all locations are cleared.',
+        heading2: 'How to remove cached files?',
         content2:'In the distribution lists in the Amazon CloudFront console, select the distribution responsible for your site. In the distribution settings, select the Invalidations tab, and then click Create invalidation. In the object paths field, add the paths to the files you would like to invalidate. If you would like to invalidate all the cached files, type the wildcard character(/*) as your path. After clicking Create invalidation it takes about 1 minute to refresh the cache. Once it is done, your website should display correctly.'
     } 
 
