@@ -7,6 +7,7 @@ import HomePage from "../../pages/HomePage/HomePage";
 import ContactPage from "../../pages/ContactPage/ContactPage";
 import BlogPage from "../../pages/BlogPage/BlogPage";
 import AboutPage from "../../pages/AboutPage/AboutPage";
+import ProjectsPage from "../../pages/ProjectsPage/ProjectsPage";
 
 const RoutesComponent: React.FC = () => {
   return (
@@ -15,9 +16,7 @@ const RoutesComponent: React.FC = () => {
       <Route path="/contact" element={<ContactPage />} />
       <Route path="/blog" element={<BlogPage />} />
       <Route path="/about" element={<AboutPage />} />
-      {/* <Route path="*" element={<ErrorPage />} />
-            <Route path="/legal-notice" element={<LegalNoticePage />} />
-            <Route path="/privacy-policy" element={<PrivacyPolicyPage />} /> */}
+      <Route path="/projects" element={<ProjectsPage />} />
     </Routes>
   );
 };

@@ -35,6 +35,13 @@ const PublicLayoutComponent: React.FC<Props> = (props) => {
               <FormattedMessage id="home.about.link" />
             </span>
           </Link>
+          {desktop && (
+            <Link to="/projects" className={styles.item}>
+              <span>
+                <FormattedMessage id="home.projects.link" />
+              </span>
+            </Link>
+          )}
           <Link to="/blog" className={styles.item}>
             <span>
               <FormattedMessage id="home.blog.link" />
@@ -51,14 +58,7 @@ const PublicLayoutComponent: React.FC<Props> = (props) => {
         <Col span={24}>{children}</Col>
       </Row>
       <Footer className={desktop ? styles.footer : styles.mobileFooter}>
-        <div>
-          <Space className={styles.links} size="large">
-            <Link to="/legal-notice" className={styles.link}>
-              <FormattedMessage id="footer.legalNotice" />
-            </Link>
-          </Space>
-        </div>
-        <div className={styles.copyright}>©2024 Dominika Szczes</div>
+        <div className={styles.copyright}>©2025 Dominika Szczes</div>
       </Footer>
     </Layout>
   );
