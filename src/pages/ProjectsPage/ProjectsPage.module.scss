@@ -1,6 +1,6 @@
 .container {
   .header {
-    padding-left: 60px;
+    padding-left: 50px;
     h3 {
       font-weight: 400;
       font-size: 60px;
@@ -12,15 +12,16 @@
     }
   }
   .project1 {
-    padding-left: 60px;
     p {
-      font-size: 35px;
+      padding-top: 55px;
+      padding-inline: 40px;
+      font-size: 30px;
       text-align: left;
     }
   }
   .imageContainer {
     width: 30%;
-    padding-top: 100px;
+    padding-top: 70px;
     padding-right: 20px;
     text-align: center;
     .image {
@@ -30,54 +31,20 @@
     }
   }
   .project2 {
-    padding-left: 60px;
     p {
-      font-size: 35px;
+      padding-inline: 40px;
+      padding-top: 60px;
+      font-size: 30px;
       text-align: left;
     }
   }
   .imageContainer2 {
     width: 30%;
-    padding-top: 100px;
-    padding-right: 20px;
+    padding-top: 80px;
     text-align: center;
     .image {
-      width: 90%;
-      padding-right: 30px;
+      width: 95%;
       padding-bottom: 20px;
-    }
-  }
-}
-
-.mobile {
-  .contactDetails {
-    padding-left: 40px;
-    h3 {
-      font-weight: 400;
-      font-size: 30px;
-      padding-top: 10px;
-    }
-    p {
-      font-weight: 400;
-      font-size: 20px;
-      padding-bottom: 10px;
-    }
-    .email {
-      color: #f955c8;
-      text-align: left;
-      font-size: 20px;
-      .icon {
-        padding-right: 20px;
-      }
-    }
-  }
-  .imageContainer {
-    width: 100%;
-    padding-top: 50px;
-    text-align: center;
-    .image {
-      width: 100%;
-      padding-right: 0px;
     }
   }
 }
