@@ -14,11 +14,13 @@
   }
   .description {
     padding-left: 50px;
+    padding-top: 20px;
     padding-right: 20px;
     font-size: 20px;
   }
   .timeline {
     padding-left: 50px;
+    padding-right: 20px;
     .icon {
       height: 30px;
     }
@@ -40,6 +42,7 @@
     }
   }
   .description {
+    padding-top: 0px;
     padding-inline: 50px;
     font-size: 18px;
     padding-bottom: 35px;

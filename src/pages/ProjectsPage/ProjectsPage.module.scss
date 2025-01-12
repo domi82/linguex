@@ -11,6 +11,11 @@
       font-style: italic;
     }
   }
+  .divider {
+    color: #f955c8;
+    font-size: 30px;
+    text-align: left;
+  }
   .project1 {
     p {
       padding-top: 55px;
@@ -44,6 +49,61 @@
     text-align: center;
     .image {
       width: 95%;
+      padding-bottom: 20px;
+    }
+  }
+}
+.mobile {
+  .header {
+    padding-inline: 50px;
+    h3 {
+      font-weight: 400;
+      font-size: 30px;
+    }
+    p {
+      font-size: 20px;
+      text-align: left;
+      font-style: italic;
+    }
+  }
+  .divider {
+    color: #f955c8;
+    font-size: 16px;
+    text-align: left;
+  }
+  .project1 {
+    p {
+      padding-top: 0px;
+      padding-inline: 50px;
+      font-size: 16px;
+      text-align: left;
+    }
+  }
+  .imageContainer {
+    width: 30%;
+    padding-top: 70px;
+    padding-right: 20px;
+    text-align: center;
+    .image {
+      width: 80%;
+      padding-right: 30px;
+      padding-bottom: 20px;
+    }
+  }
+  .project2 {
+    p {
+      padding-inline: 50px;
+      padding-top: 0px;
+      font-size: 16px;
+      text-align: left;
+    }
+  }
+  .imageContainer2 {
+    width: 20%;
+    padding-top: 80px;
+    text-align: center;
+    .image {
+      width: 80%;
       padding-bottom: 20px;
     }
   }

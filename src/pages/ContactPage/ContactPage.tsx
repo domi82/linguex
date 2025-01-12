@@ -1,5 +1,9 @@
-import { MailOutlined } from "@ant-design/icons";
-import { Col, Image, Row } from "antd";
+import {
+  GithubOutlined,
+  LinkedinOutlined,
+  MailOutlined,
+} from "@ant-design/icons";
+import { Col, Image, Row, Space } from "antd";
 import { useEffect } from "react";
 import { FormattedMessage } from "react-intl";
 import PublicLayoutComponent from "../../components/LayoutComponent/PublicLayoutComponent/PublicLayoutComponent";
@@ -47,9 +51,21 @@ const ContactPage: React.FC = () => {
             <p>
               <FormattedMessage id="contact.description.2" />
             </p>
+            <p>
+              <FormattedMessage id="contact.description.3" />
+            </p>
             <div className={styles.email}>
-              <MailOutlined className={styles.icon} />
-              <a href="mailto:szczes@gmail.com">szczes@gmail.com</a>
+              <Space size={"large"}>
+                <a href="mailto:szczes@gmail.com">
+                  <MailOutlined />
+                </a>
+                <a href="https://www.linkedin.com/in/dominika-szcze%C5%9B-93ba2148/">
+                  <LinkedinOutlined className={styles.icon} />
+                </a>
+                <a href="https://github.com/domi82">
+                  <GithubOutlined />
+                </a>
+              </Space>
             </div>
           </Col>
           <Col

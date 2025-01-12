@@ -14,6 +14,8 @@ const PostComponent: React.FC<Props> = (props) => {
     content1,
     heading2,
     content2,
+    heading3,
+    content3,
   } = props;
 
   /*** HOOKS ***/
@@ -68,6 +70,8 @@ const PostComponent: React.FC<Props> = (props) => {
         {content1 && <p>{content1}</p>}
         {heading2 && <h4>{heading2}</h4>}
         {content2 && <p>{content2}</p>}
+        {heading3 && <h4>{heading3}</h4>}
+        {content3 && <p>{content3}</p>}
       </div>
     </Card>
   );
@@ -83,4 +87,6 @@ interface Props {
   content1?: string;
   heading2?: string;
   content2?: string;
+  heading3?: string;
+  content3?: string;
 }

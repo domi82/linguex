@@ -27,7 +27,9 @@ const posts:Post[] =[
         heading1:'How cache is used in CloudFront?',
         content1:'CloudFront speeds up distribution of static and dynamic web content by using a network of data centers (edge locations). These data centers can store copies of our files (cached files) and provide them to the users depending on their request and location. When a user requests content, the request is rooted to the location that has the lowest latency (time delay). This reduces the number of requests that the origin server must respond to directly and improves the load time. When we upload a newer version of our app to S3, we need to make sure that the cached files in all locations are cleared.',
         heading2: 'How to remove cached files?',
-        content2:'In the distribution lists in the Amazon CloudFront console, select the distribution responsible for your site. In the distribution settings, select the Invalidations tab, and then click Create invalidation. In the object paths field, add the paths to the files you would like to invalidate. If you would like to invalidate all the cached files, type the wildcard character(/*) as your path. After clicking Create invalidation it takes about 1 minute to refresh the cache. Once it is done, your website should display correctly.'
+        content2:'In the distribution lists in the Amazon CloudFront console, select the distribution responsible for your site. In the distribution settings, select the Invalidations tab, and then click Create invalidation. In the object paths field, add the paths to the files you would like to invalidate. If you would like to invalidate all the cached files, type the wildcard character(/*) as your path. After clicking Create invalidation it takes about 1 minute to refresh the cache. Once it is done, your website should display correctly.',
+        heading3: 'How to clear cache with CLI?',
+        content3:'To invalidate CloudFront cache for specific files, use the following AWS CLI command: aws cloudfront create-invalidation --distribution-id <DISTRIBUTION_ID> --paths "/*".Remember to replace the distribution id and modify the paths as needed.'
     } 
 
 ]

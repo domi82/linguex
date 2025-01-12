@@ -57,6 +57,8 @@ const BlogPage: React.FC = () => {
                     content1={p.content1}
                     heading2={p.heading2}
                     content2={p.content2}
+                    heading3={p.heading3}
+                    content3={p.content3}
                   />
                 </Col>
               ))}

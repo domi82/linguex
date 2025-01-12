@@ -1,4 +1,4 @@
-import { Col, Image, Row } from "antd";
+import { Col, Divider, Image, Row } from "antd";
 import { useEffect } from "react";
 import { FormattedMessage } from "react-intl";
 import PublicLayoutComponent from "../../components/LayoutComponent/PublicLayoutComponent/PublicLayoutComponent";
@@ -44,6 +44,13 @@ const ProjectsPage: React.FC = () => {
             <p>
               <FormattedMessage id="projects.description.1" />
             </p>
+            <Divider
+              orientation="left"
+              orientationMargin="0"
+              className={styles.divider}
+            >
+              Commercial projects
+            </Divider>
           </Col>
           <Col
             className={styles.project1}

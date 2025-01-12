@@ -1,4 +1,5 @@
 import {
+  CodeOutlined,
   RocketOutlined,
   SmileOutlined,
   SunOutlined,
@@ -75,27 +76,31 @@ const AboutPage: React.FC = () => {
                 {
                   color: "gray",
                   children:
-                    "In 2016 I set up my own company, where I provided technical writing and content editing services.",
+                    "In 2018 I moved (again!) to Cracow, where I started to work as a Technical Writer for Cisco.",
                 },
                 {
                   dot: <SmileOutlined style={{ fontSize: "30px" }} />,
                   children:
-                    "In 2018 I moved (again!) to Cracow, where I started to work as a Technical Writer for Cisco.",
-                },
-                {
-                  color: "gray",
-                  children:
                     "In 2019 I started to work for the Jira team at Cisco. This was one of the most important events in my professional career as it sparked my interest in software.",
                 },
                 {
-                  dot: <RocketOutlined style={{ fontSize: "40px" }} />,
+                  color: "gray",
                   children:
                     "In 2019 I took up a Cisco Devnet course and then started learning Javascript and React.",
                 },
                 {
+                  dot: <RocketOutlined style={{ fontSize: "40px" }} />,
+                  children:
+                    "Between 2019 and 2022 I completed numerous frontend development-related courses (Javascript, Typescript, React, etc.).",
+                },
+                {
                   color: "gray",
                   children:
-                    "In 2022 I left Cisco and started to work as a Junior Frontend Developer.",
+                    "In 2022 I left Cisco and started to work as a Junior Frontend Developer for Walfen - a software development company.",
+                },
+                {
+                  dot: <CodeOutlined style={{ fontSize: "35px" }} />,
+                  children: "I keep on improving my coding skills.",
                 },
               ]}
             />
