@@ -1,8 +1,8 @@
 name: Build and deploy React app to CloudFront
 on:
     push:
-        branches: [master]
-jobs: build-and-deploy:
+        branches: [main]
+jobs: deploy:
        name: Build and deploy
        runs-on: ubuntu-latest
        env: 
