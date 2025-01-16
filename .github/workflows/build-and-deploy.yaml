@@ -1,4 +1,4 @@
-name: AWS MyAstroSite Deploy to S3
+name: Build and Deploy to S3
 
 on:
   push:
@@ -7,7 +7,7 @@ on:
 
 jobs:
   deploy_to_s3:
-    name: build and deploy
+    name: Build and deploy
     runs-on: ubuntu-latest
     env:
       BUCKET: www.linguex.eu
@@ -31,8 +31,8 @@ jobs:
           aws-secret-access-key: ${{secrets.AWS_SECRET_ACCESS_KEY}}
           aws-region: ${{env.REGION}}
 
-      - name: deploy to s3
+      - name: Deploy to s3
         run: aws s3 sync --delete ${{env.DIST}} s3://${{env.BUCKET}}
 
-      - name: invalidate cloudfront cache
+      - name: Invalidate cloudfront cache
         run: aws cloudfront create-invalidation --distribution-id {{ env.DIST_ID }}--paths "/*" "/"
