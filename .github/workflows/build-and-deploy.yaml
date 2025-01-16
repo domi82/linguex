@@ -1,17 +1,19 @@
-name: Build and deploy React app to CloudFront
+name: Build and deploy
 on:
   push:
     branches:
       - main
-jobs: 
-    deploy:
-       name: Build and deploy
-       runs-on: ubuntu-latest
-       env: 
-           BUCKET: www.linguex.eu
-           DIST: build
-           REGION: eu-north-1
-           DIST_ID: E1F1CQ0Z3FF3BH
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    env: 
+      BUCKET: www.linguex.eu
+      DIST: build
+      REGION: eu-north-1
+      DIST_ID: E1F1CQ0Z3FF3BH
+
+
     steps:
      - name: Checkout
        uses: actions/checkout@v2
