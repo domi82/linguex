@@ -2,7 +2,6 @@ import { AppstoreOutlined } from "@ant-design/icons";
 import { Menu } from "antd";
 import { MenuProps } from "antd/lib";
 import { FormattedMessage } from "react-intl";
-import { Link } from "react-router-dom";
 import posts from "../../data/posts";
 
 const BlogSidebar: React.FC<Props> = (props) => {
