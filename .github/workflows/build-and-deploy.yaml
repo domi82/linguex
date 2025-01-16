@@ -34,5 +34,5 @@ jobs:
       - name: Deploy to s3
         run: aws s3 sync --delete ${{env.DIST}} s3://${{env.BUCKET}}
 
-      - name: Invalidate cloudfront cache
+      - name: Invalidate Cloudfront Cache
         run: aws cloudfront create-invalidation --distribution-id E1F1CQ0Z3FF3BH --paths "/*"

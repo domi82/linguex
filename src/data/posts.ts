@@ -30,7 +30,18 @@ const posts:Post[] =[
         content2:'In the distribution lists in the Amazon CloudFront console, select the distribution responsible for your site. In the distribution settings, select the Invalidations tab, and then click Create invalidation. In the object paths field, add the paths to the files you would like to invalidate. If you would like to invalidate all the cached files, type the wildcard character(/*) as your path. After clicking Create invalidation it takes about 1 minute to refresh the cache. Once it is done, your website should display correctly.',
         heading3: 'How to clear cache with CLI?',
         content3:'To invalidate CloudFront cache for specific files, use the following AWS CLI command: aws cloudfront create-invalidation --distribution-id <DISTRIBUTION_ID> --paths "/*".Remember to replace the distribution id and modify the paths as needed.'
-    } 
+    },
+    {label:'Git',
+        date: "16th Jan 2025",
+        title:"GitHub Actions",
+        content:'If you are looking for a tool for automating the build and deployment of your project, GitHub Actions can be the answer to your needs.',
+        heading1:'What is GitHub Actions?',
+        content1:'GitHub Actions is a Continuous Integration and Continuous Deployment (CI/CD) tool that allows you to automate workflows directly within your GitHub repositories. With GitHub Actions you can trigger tasks based on specific events in your repository, such as a code push, pull request, or release. These tasks, defined in YAML configuration files, can be used for running tests or deploying your project to production.',
+        heading2: 'Why Use GitHub Actions?',
+        content2:'Perhaps the most important reason for using GitHub Actions is its seamless integration with GitHub. It is incredibly easy to set up and manage workflows without leaving the repository. But there are many more reasons for using it: it saves time and reduces errors by automating repetitive tasks, offers the user flexibility to fit their unique needs, and comes with thousands of prebuilt actions to streamline the workflows.',
+        heading3: 'Popular Use Cases',
+        content3:'GitHub Actions can be used for Continuous Integration (e.g., to automatically run tests and build your application on every push or pull request), Continuous Deployment (e.g., to deploy your application to platforms like AWS, Azure, or Firebase), Static Code Analysis (e.g., to integrate tools like ESLint or Prettier to enforce code quality standards), or for Versioning and Releases (e.g., to automate the creation of new releases, including changelogs and version tagging). Whether you are working on a small website or managing a complex project, GitHub Actions can simplify and enhance your workflow. Ready to speed up your development process? Dive into GitHub Actions documentation to learn about this powerful tool!'
+    },
 
 ]
 

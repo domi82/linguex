@@ -62,7 +62,7 @@ const ContactPage: React.FC = () => {
                 <a href="https://www.linkedin.com/in/dominika-szcze%C5%9B-93ba2148/">
                   <LinkedinOutlined className={styles.icon} />
                 </a>
-                <a href="https://github.com/domi82">
+                <a href="https://github.com/domi82/linguex">
                   <GithubOutlined />
                 </a>
               </Space>
