@@ -12,6 +12,8 @@ const PostComponent: React.FC<Props> = (props) => {
     content,
     heading1,
     content1,
+    code1,
+    code2,
     heading2,
     content2,
     heading3,
@@ -68,6 +70,8 @@ const PostComponent: React.FC<Props> = (props) => {
         {content && <p>{content}</p>}
         {heading1 && <h4>{heading1}</h4>}
         {content1 && <p>{content1}</p>}
+        {code1 && <p className={styles.code}>{code1}</p>}
+        {code2 && <p className={styles.code}>{code2}</p>}
         {heading2 && <h4>{heading2}</h4>}
         {content2 && <p>{content2}</p>}
         {heading3 && <h4>{heading3}</h4>}
@@ -85,6 +89,8 @@ interface Props {
   content: string;
   heading1?: string;
   content1?: string;
+  code1?: string;
+  code2?: string;
   heading2?: string;
   content2?: string;
   heading3?: string;

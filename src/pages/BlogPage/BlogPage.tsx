@@ -55,6 +55,8 @@ const BlogPage: React.FC = () => {
                     content={p.content!}
                     heading1={p.heading1}
                     content1={p.content1}
+                    code1={p.code1}
+                    code2={p.code2}
                     heading2={p.heading2}
                     content2={p.content2}
                     heading3={p.heading3}

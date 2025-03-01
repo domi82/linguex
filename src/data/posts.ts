@@ -42,6 +42,18 @@ const posts:Post[] =[
         heading3: 'Popular Use Cases',
         content3:'GitHub Actions can be used for Continuous Integration (e.g., to automatically run tests and build your application on every push or pull request), Continuous Deployment (e.g., to deploy your application to platforms like AWS, Azure, or Firebase), Static Code Analysis (e.g., to integrate tools like ESLint or Prettier to enforce code quality standards), or for Versioning and Releases (e.g., to automate the creation of new releases, including changelogs and version tagging). Whether you are working on a small website or managing a complex project, GitHub Actions can simplify and enhance your workflow. Ready to speed up your development process? Dive into GitHub Actions documentation to learn about this powerful tool!'
     },
+    {label:'Javascript',
+        date: "1st Mar 2025",
+        title:"Determining the variable type",
+        content:'If you find it hard to work out what type of variable you are dealing with in your code, you might want to try typeof.',
+        heading1:'What is typeof?',
+        content1:'Typeof is an operator that returns the type of variable in Javascript. Because it is just an operator (and not a method), you can use in without brackets in your code. However, sometimes it can be followed by brackets, to make your code easier to read. Have a look at these two examples:',
+        code1:'variableType = typeof someVariable;',
+        code2: 'variableType = typeof (someVariable);',
+        heading2: 'Typeof with the null type',
+        content2:'While for most primitive types typeof outputs the correct type, it is not the case for the null type. Because of an old Javascript bug (that cannot be removed due to backward compatibility problems), typeof null returns an object (although it is a primitive type). So, bear that in mind when writing your code!',
+        
+    },
 
 ]
 

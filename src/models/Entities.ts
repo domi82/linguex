@@ -12,4 +12,6 @@ export interface Post {
     content3?: string;
     heading4?: string;
     content4?: string;
+    code1?: string;
+    code2?: string;
 }
