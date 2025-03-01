@@ -44,7 +44,7 @@ const posts:Post[] =[
     },
     {label:'Javascript',
         date: "1st Mar 2025",
-        title:"Determining the variable type",
+        title:"Determining the Variable Type",
         content:'If you find it hard to work out what type of variable you are dealing with in your code, you might want to try typeof.',
         heading1:'What is typeof?',
         content1:'Typeof is an operator that returns the type of variable in Javascript. Because it is just an operator (and not a method), you can use in without brackets in your code. However, sometimes it can be followed by brackets, to make your code easier to read. Have a look at these two examples:',
