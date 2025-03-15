@@ -54,6 +54,19 @@ const posts:Post[] =[
         content2:'While for most primitive types typeof outputs the correct type, it is not the case for the null type. Because of an old Javascript bug (that cannot be removed due to backward compatibility problems), typeof null returns an object (although it is a primitive type). So, bear that in mind when writing your code!',
         
     },
+    {label:'HTML5',
+        date: "14th Mar 2025",
+        title:"HTML5 - Key Features",
+        content:'Since its creation in the early 1990s, HTML has continuously evolved to keep up with advancing technology. Over the years, several versions have been released, including HTML 4 (introduced in 1997) and XHTML 1.0 (published in 2000). Today, major web browsers fully support HTML5, which was officially completed and released in 2014. HTML5 introduced numerous features that enhanced web development, interactivity, and multimedia support. Below, I highlight some of its key improvements.',
+        heading1:'New semantic elements',
+        content1:'HTML5 introduced elements that better define content structure, such as <header>, <footer>, <section>, <article>, <aside>, and <nav>. These elements enhance accessibility and provide clearer context for screen readers, improving the browsing experience for users with disabilities',
+        heading2: 'Multimedia support',
+        content2:'HTML5 offers built-in support for playing audio and video files without third-party plugins like Flash. In addition, it introduces the <source> element, which allows multiple media formats for better browser compatibility.',
+        heading3: 'Graphic elements and improved accessibility',
+        content3:'The new version of HTML supports scalable vector-based images and graphics. It also enables drawing graphics, animations, and game elements using JavaScript. In addition, it works well on different device sizes and allows better mobile scaling thanks to the viewport meta tag (<meta name="viewport" content="width=device-width, initial-scale=1.0">).',
+        heading4: 'What\'s next?',
+        content4: 'Beyond visual enhancements, HTML5 also introduces new input types and form validation to simplify user interactions and improve accessibility. While it is impossible to list every feature here, it seems that the main goal of these advancements is clear—to make the web more accessible, interactive, and less reliant on third-party libraries.'
+    },
 
 ]
 
