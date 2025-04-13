@@ -49,6 +49,7 @@ const BlogPage: React.FC = () => {
               .map((p) => (
                 <Col xs={24} md={24} lg={18}>
                   <PostComponent
+                    id={p.id}
                     date={p.date}
                     label={p.label!}
                     title={p.title!}

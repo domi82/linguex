@@ -100,7 +100,7 @@ const AboutPage: React.FC = () => {
                 },
                 {
                   dot: <CodeOutlined style={{ fontSize: "35px" }} />,
-                  children: "I keep on improving my coding skills.",
+                  children: "I keep on improving my technical skills.",
                 },
               ]}
             />

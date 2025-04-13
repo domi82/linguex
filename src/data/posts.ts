@@ -1,17 +1,20 @@
 import { Post } from "../models/Entities";
 
 const posts:Post[] =[
-    {label:'Git',
+    {   id:1,
+        label:'Git',
         date: "1st Sep 2024",
         title:'Using Stash',
         content1:'Has it ever happened to you that you made some changes to the code in one git branch and wanted to apply them in another one? This is what happened to me not so long ago. The answer to my problem was GIT STASH. This git command helps you to temporarily save any uncommited changes (both staged and unstaged). This comes especially handy in cases like mine - when I wanted to store my changes from one branch, switch the branch, and then drop them in a new place. While using stash three commands are worth remembering: git stash (saving the changes), git stash pop (reapplying the previously stashed changes, removing them from stash), and git stash apply (if you would like to do the same, but without removing the changes from stash). I hope you find this info useful just I did!'
     },
-    {label:'Frontend Development',
+    {   id:2,
+        label:'Frontend Development',
         date: "10th Sep 2024",
         title:"Google Icons",
         content1:'Although I normally use antd icons in my project, I must admit they are often not as visually appealing as Google icons. As I am increasingly using Google Material assets in my work, I have been looking for information on how to use Google icons in a React project, without uploading these assets (which can take some space in a project). The process is very simple. First, we import the Google fonts api in our index.html file. Second, we add the material-icons class in our index.css file of the project. To reference an icon in our code, we just need to place their name in a span with a class called material-icons.'
     },
-    {label:'Frontend Development',
+    {   id:3,
+        label:'Frontend Development',
         date: "14th Dec 2024",
         title:"Next.js Workshop",
         content:'This week I have taken part in a Next.js workshop organized by Vercel (Next.js 15 App Router Foundations). It was delivered by Alice de Mauro, Senior Solution Architect at Vercel. Alice has a broad experience of working with Next.js and was great at explaining its core concepts.',
@@ -20,7 +23,8 @@ const posts:Post[] =[
         heading2: 'What did I learn?',
         content2:'The workshop started with a short introduction into Next.js, its core concepts and architecture. Using hands-on exercises, we have learned how to create dynamic routes, nested routing, and custom routes. We have also discovered when and how to use Server-Side Rendering (SSR) and Static Site Generation (SSG), and explored styling with layouts and templates. I am glad that I had the opportunity to take part in this event and I am looking forward to the new ones!'
     },
-     {label:'AWS',
+     {  id:4,
+        label:'AWS',
         date: "11th Jan 2025",
         title:"Cache in CloudFront",
         content:'If after uploading a new build of your app into the Amazon S3 bucket your browser still loads the old version of your site, this might be caused by cached files in CloudFront.',
@@ -31,7 +35,8 @@ const posts:Post[] =[
         heading3: 'How to clear cache with CLI?',
         content3:'To invalidate CloudFront cache for specific files, use the following AWS CLI command: aws cloudfront create-invalidation --distribution-id <DISTRIBUTION_ID> --paths "/*".Remember to replace the distribution id and modify the paths as needed.'
     },
-    {label:'Git',
+    {   id:5,
+        label:'Git',
         date: "16th Jan 2025",
         title:"GitHub Actions",
         content:'If you are looking for a tool for automating the build and deployment of your project, GitHub Actions can be the answer to your needs.',
@@ -42,7 +47,8 @@ const posts:Post[] =[
         heading3: 'Popular Use Cases',
         content3:'GitHub Actions can be used for Continuous Integration (e.g., to automatically run tests and build your application on every push or pull request), Continuous Deployment (e.g., to deploy your application to platforms like AWS, Azure, or Firebase), Static Code Analysis (e.g., to integrate tools like ESLint or Prettier to enforce code quality standards), or for Versioning and Releases (e.g., to automate the creation of new releases, including changelogs and version tagging). Whether you are working on a small website or managing a complex project, GitHub Actions can simplify and enhance your workflow. Ready to speed up your development process? Dive into GitHub Actions documentation to learn about this powerful tool!'
     },
-    {label:'Javascript',
+    {   id:6,
+        label:'Javascript',
         date: "1st Mar 2025",
         title:"Variable Type",
         content:'If you find it hard to work out what type of variable you are dealing with in your code, you might want to try typeof.',
@@ -54,7 +60,8 @@ const posts:Post[] =[
         content2:'While for most primitive types typeof outputs the correct type, it is not the case for the null type. Because of an old Javascript bug (that cannot be removed due to backward compatibility problems), typeof null returns an object (although it is a primitive type). So, bear that in mind when writing your code!',
         
     },
-    {label:'HTML5',
+    {   id:7,
+        label:'HTML5',
         date: "14th Mar 2025",
         title:"HTML5 - Key Features",
         content:'Since its creation in the early 1990s, HTML has continuously evolved to keep up with advancing technology. Over the years, several versions have been released, including HTML 4 (introduced in 1997) and XHTML 1.0 (published in 2000). Today, major web browsers fully support HTML5, which was officially completed and released in 2014. HTML5 introduced numerous features that enhanced web development, interactivity, and multimedia support. Below, I highlight some of its key improvements.',

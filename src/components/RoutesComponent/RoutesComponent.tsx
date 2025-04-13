@@ -8,6 +8,7 @@ import ContactPage from "../../pages/ContactPage/ContactPage";
 import BlogPage from "../../pages/BlogPage/BlogPage";
 import AboutPage from "../../pages/AboutPage/AboutPage";
 import ProjectsPage from "../../pages/ProjectsPage/ProjectsPage";
+import BlogPostPage from "../../pages/BlogPostPage/BlogPostPage";
 
 const RoutesComponent: React.FC = () => {
   return (
@@ -15,6 +16,7 @@ const RoutesComponent: React.FC = () => {
       <Route path="/" element={<HomePage />} />
       <Route path="/contact" element={<ContactPage />} />
       <Route path="/blog" element={<BlogPage />} />
+      <Route path="/blog/:id" element={<BlogPostPage />} />
       <Route path="/about" element={<AboutPage />} />
       <Route path="/projects" element={<ProjectsPage />} />
     </Routes>

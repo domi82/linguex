@@ -1,0 +1,61 @@
+.card {
+  margin: 20px;
+  border: 1px solid #cfd3d4;
+  padding-bottom: 20px;
+
+  .avatar {
+    margin-right: -150px;
+    .image {
+      padding-top: 30px;
+      font-size: 20px;
+      width: 50%;
+    }
+  }
+  .title {
+    font-size: 30px;
+    align-content: left;
+  }
+  .buttons {
+    size: "large";
+  }
+  .description {
+    font-size: 20px;
+    .code {
+      font-family: "Courier New", Courier, monospace;
+    }
+  }
+  .date {
+    font-size: 16px;
+  }
+}
+
+.mobileCard {
+  margin-bottom: 20px;
+  margin-top: 30px;
+  border: 1px solid #cfd3d4;
+  padding-bottom: 20px;
+
+  .avatar {
+    margin-right: -250px;
+    .mobileImage {
+      padding-top: 30px;
+      font-size: 20px;
+      width: 10%;
+    }
+  }
+  .title {
+    font-size: 20px;
+  }
+  .buttons {
+    size: "small";
+  }
+  .description {
+    font-size: 15px;
+    .code {
+      font-family: "Courier New", Courier, monospace;
+    }
+  }
+  .date {
+    font-size: 14px;
+  }
+}

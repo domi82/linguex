@@ -3,9 +3,11 @@ import styles from "./PostComponent.module.scss";
 import blog from "../../resources/images/blog.svg";
 import x from "../../resources/images/x-icon.svg";
 import useResponsiveLayout from "../LayoutComponent/UseResponsiveLayout/UseResponsiveLayout";
+import { Link } from "react-router-dom";
 
 const PostComponent: React.FC<Props> = (props) => {
   const {
+    id,
     date,
     label,
     title,
@@ -25,6 +27,8 @@ const PostComponent: React.FC<Props> = (props) => {
   /*** HOOKS ***/
 
   const [desktop] = useResponsiveLayout();
+  console.log("id", id);
+  console.log("date", date);
 
   /*** VISUAL ***/
 
@@ -81,12 +85,16 @@ const PostComponent: React.FC<Props> = (props) => {
         {heading4 && <h4>{heading4}</h4>}
         {content4 && <p>{content4}</p>}
       </div>
+      <Link to={`/blog/${id}`}>
+        <Button>Read more</Button>
+      </Link>
     </Card>
   );
 };
 export default PostComponent;
 
 interface Props {
+  id?: number;
   date?: string;
   label: string;
   title: string;
