@@ -56,7 +56,7 @@ const ContactPage: React.FC = () => {
             </p>
             <div className={styles.email}>
               <Space size={"large"}>
-                <a href="mailto:szczes@gmail.com">
+                <a href="mailto:linguex@duck.com">
                   <MailOutlined />
                 </a>
                 <a href="https://www.linkedin.com/in/dominika-szcze%C5%9B-93ba2148/">
